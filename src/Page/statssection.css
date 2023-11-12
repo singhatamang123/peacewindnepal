@@ -1,0 +1,53 @@
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.stat {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Increase icon size and set color to red */
+.stat.visible svg {
+    font-size: 3em; /* Adjust the size as needed */
+    color: red;
+}
+
+/* customnavbar.css */
+/* ... Your existing styles ... */
+
+  
+
+/* Add this to your CSS */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .scroll-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
